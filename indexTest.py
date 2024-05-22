@@ -16,13 +16,14 @@ time.sleep(1)
 def test2():
     def test1():
     elementOne = driver.find_element(By.ID,value = element-two)
-    elementOne.mouseover() 
+    assert "box-shadow" in elementTwo.get_attribute("style")
 
 time.sleep(1)
 # kattintás után eltűnik-e
 def test3():
     def test1():
     elementOne = driver.find_element(By.ID,value = element-three)
+    assert "hidden" in elementTwo.get_attribute("style")
     elementOne.click() 
 
 time.sleep(1)
@@ -30,6 +31,7 @@ time.sleep(1)
 def test4():
     def test1():
     elementOne = driver.find_element(By.ID,value = element-four)
+    assert "green" in elementTwo.get_attribute("style")
     elementOne.click() 
 
 time.sleep(1)
@@ -37,4 +39,5 @@ time.sleep(1)
 def test5():
     def test1():
     elementOne = driver.find_element(By.ID,value = element-five)
+    driver.save_screenshot("test5.jpg")
     elementOne.click() 
